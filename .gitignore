@@ -1,0 +1,69 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Auto-generated files
+*.vs/
+.vscode/
+
+# Logs
+*.log
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+
+# Entity Framework
+*.jfm
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# NCrunch
+*.ncrunchsolution
+*.ncrunchproject
+*.ncrunch
+
+# MSTest test results
+TestResults/
+
+# Web
+wwwroot/
+node_modules/
+npm-debug.log
+yarn-error.log
