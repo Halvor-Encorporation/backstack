@@ -9,9 +9,11 @@ namespace backstack.Controllers;
 public class CoinController : ControllerBase
 {
     internal ICoinService _coinService;
-    public CoinController(ICoinService coinService)
+    IEmailSender _emailSender;
+    public CoinController(ICoinService coinService, IEmailSender emailSender) 
     {
-       _coinService = coinService;
+        _coinService = coinService;
+        _emailSender = emailSender;
     }
 
     
@@ -31,6 +33,14 @@ public class CoinController : ControllerBase
     {
         _coinService.AddCoins(userId, amount);
         return Ok();
+    }
+
+    [HttpGet]
+    [Route("sendMail")]
+    public IActionResult SendMail()
+    {
+        _emailSender.SendEmailAsync("ecschoye@stud.ntnu.no", "Tilbakestill passord", "Send en melding til Halvor, så vil han tilbakestille passordet ditt.");
+        return Ok("Mail sent");
     }
 
 }

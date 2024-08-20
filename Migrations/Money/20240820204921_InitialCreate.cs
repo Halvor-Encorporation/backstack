@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace backstack.Migrations
+namespace backstack.Migrations.Money
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
